@@ -1,5 +1,6 @@
-const express = require('express');
+
 const graphqlHTTP = require('express-graphql');
+const express = require('express');
 const cors = require('cors');
 const schema = require('./schema');
 const path = require('path');
@@ -15,7 +16,6 @@ app.use(
     graphiql: true
   })
 );
-
 
 app.use(express.static('public'));
 app.get('*', (req, res) => {
