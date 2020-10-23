@@ -15,7 +15,9 @@ app.use(
     graphiql: true
   })
 );
-
+/**
+ * hello from the other side http req 
+ */
 
 app.use(express.static('public'));
 app.get('*', (req, res) => {
